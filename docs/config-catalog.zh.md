@@ -888,6 +888,41 @@ export interface Config {
 ```
 <!-- END GENERATED config-catalog:@deepseek-ai/dsh-client-ui-trajectory -->
 
+<!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-command-guard -->
+<a id="deepseek-aidsh-command-guard"></a>
+
+## `@deepseek-ai/dsh-command-guard`
+
+- `inject`: `tools`
+- `source`: [`packages/guard/command-guard/src/index.ts:33`](../packages/guard/command-guard/src/index.ts)
+
+```ts config-catalog
+/** Plugin configuration, validated by the same-named schemastery schema plus `apply`'s load-time checks. */
+export interface Config {
+  /** Rules evaluated in order; omitting the field installs {@link DEFAULT_RULES}, while an explicitly empty list matches nothing. */
+  rules?: Rule[]
+  /** Argument field names that carry a command; default `['command', 'cmd', 'script']`. */
+  fields?: string[]
+}
+
+/** One configured command rule. */
+export interface Rule {
+  /** Stable identifier quoted in diagnostics and in the default reason. */
+  id: string
+  /** Tool-name wildcard pattern; `*` (the default) matches every tool. */
+  tool?: string
+  /** Regular expression source matched against each command-bearing argument. */
+  pattern: string
+  /** RegExp flags; default `i`. */
+  flags?: string
+  /** `deny` returns a policy denial; `ask` routes the call through the approval service. */
+  action?: 'deny' | 'ask'
+  /** Model-facing denial reason; default names the rule id. */
+  reason?: string
+}
+```
+<!-- END GENERATED config-catalog:@deepseek-ai/dsh-command-guard -->
+
 <!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-compaction-basic -->
 <a id="deepseek-aidsh-compaction-basic"></a>
 

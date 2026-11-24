@@ -429,6 +429,12 @@
     - id: timeout-policy
       name: '@deepseek-ai/dsh-tool-call-timeout-policy'
 
+    # Denies or escalates configured destructive shell commands before dispatch.
+    # Shipped disabled; a profile patch enables it for deployments that want it.
+    - id: command-guard
+      name: '@deepseek-ai/dsh-command-guard'
+      disabled: true
+
     - id: spill-local
       name: '@deepseek-ai/dsh-spill-local'
 

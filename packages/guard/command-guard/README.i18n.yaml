@@ -1,0 +1,43 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/guard/command-guard/README.md
+/:
+  en: 48656f2c145af48f
+  zh: 82e985833caa0dde
+/deepseek-ai-dsh-command-guard:
+  en: e8347778beb23c2d
+  zh: 3545a3139a09be91
+/deepseek-ai-dsh-command-guard/summary:
+  en: 96ec2f69e93edb93
+  zh: ff75aa5178eeb315
+/deepseek-ai-dsh-command-guard/table-of-contents:
+  en: fe1ecb09a73d1c7a
+  zh: f27eb5ff139d70b4
+/deepseek-ai-dsh-command-guard/use-this-package:
+  en: 406398313d5d74f6
+  zh: 6f9f18e74e861790
+/deepseek-ai-dsh-command-guard/understand-the-implementation:
+  en: 9cd0b4df24809b5b
+  zh: 8c0375706896118c
+/deepseek-ai-dsh-command-guard/dev-note:
+  en: fa6bd6b0c6efdad8
+  zh: 92163b7083736305
+/deepseek-ai-dsh-command-guard/model-experience:
+  en: 215e7ba838619b7b
+  zh: 215e7ba838619b7b
+/deepseek-ai-dsh-command-guard/model-experience/conditional-tool-result:
+  en: 7877631ca859b191
+  zh: 7877631ca859b191
+/deepseek-ai-dsh-command-guard/model-experience/conditional-tool-result/what-the-model-sees:
+  en: 8f892e8d3239f6b6
+  zh: 306fba9e93849895
+/deepseek-ai-dsh-command-guard/model-experience/conditional-tool-result/token-effect:
+  en: 32ad4b6aace377f7
+  zh: c4b77044571e553c
+/deepseek-ai-dsh-command-guard/model-experience/conditional-tool-result/kv-cache-effect:
+  en: 0c67f1ac0a51662a
+  zh: d9d06ce9b6ffac6f
+/deepseek-ai-dsh-command-guard/known-limitations-and-deferred-work:
+  en: 20e7b2dd3414dabd
+  zh: 7a2b88793fb8da67
